@@ -1,0 +1,161 @@
+<html>
+<head>
+	<title>Login Form</title>
+	<style>
+		body {
+			background-color: #f5f6f7;
+			font-family: 'Poppins', sans-serif;
+			margin: 0;
+		}
+
+		.container {
+			background-color: #fff;
+			padding: 40px;
+			border-radius: 20px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			width: 300px; /* increased width */
+			margin: 100px auto; /* added margin top and bottom, and centered horizontally */
+			background-color: #f7f7f7;
+			border: none;
+		}
+
+		h1 {
+			color: #333;
+			margin-bottom: 10px;
+		}
+
+		.input-group {
+			margin-bottom: 20px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		input[type="text"], input[type="email"], input[type="password"] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			transition: border-color 0.3s, box-shadow 0.3s;
+		}
+
+		input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover {
+			border-color: #aaa; /* change border color on hover */
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+
+		button[type="submit"] {
+			background-color: #333; /* changed to match navbar color */
+			color: #fff;
+			padding: 10px 40px; /* increased padding to make it wider */
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		button[type="submit"]:hover {
+			background-color: #444; /* changed to match navbar hover color */
+		}
+
+		.navbar {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+
+		.navbar ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.navbar li {
+			margin-right: 20px;
+		}
+
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			transition: color 0.3s;
+			padding: 10px 20px;
+			border-radius: 5px;
+		}
+
+		.navbar a:hover {
+			color: #ccc;
+			background-color: #444;
+		}
+
+		.footer {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+
+		.footer p {
+			margin: 0;
+		}
+
+		.person {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			padding: 10px;
+			margin: 0 auto 20px; /* centered horizontally and added margin bottom */
+		}
+
+		.person img {
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="register.html">Sign up</a></li>
+			<li><a href="About us.html">About</a></li>
+			<li><a href="Contact us.html">Contact</a></li>
+		</ul>
+	</div>
+
+	<div class="container">
+		<div class="person">
+			<img src="person.png" alt="person">
+		</div>
+		<h1>Login</h1>
+		<p>please enter your credentials to login</p>
+		<form>
+			<div class="input-group">
+				<label for="email">Email:</label>
+				<input type="email" id="email" required placeholder="tareq@example.com" />
+			</div>
+			<div class="input-group">
+				<label for="username">Username:</label>
+				<input type="text" id="username" required placeholder="dino" />
+			</div>
+			<div class="input-group">
+				<label for="password">Password:</label>
+				<input type="password" id="password" required placeholder="At least 8 characters" />
+			</div>
+			<button type="submit">Login</button>
+		</form>
+	</div>
+
+	<div class="footer">
+		<p>&copy; 2024 NinjasIP. All rights reserved.</p>
+	</div>
+</body>
+</html>
