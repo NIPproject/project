@@ -47,7 +47,7 @@
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 		}
 
-		button[type="submit"] {
+		button[type="submit"], button[type="button"] {
 			background-color: #333; /* changed to match navbar color */
 			color: #fff;
 			padding: 10px 40px; /* increased padding to make it wider */
@@ -56,7 +56,7 @@
 			cursor: pointer;
 		}
 
-		button[type="submit"]:hover {
+		button[type="submit"]:hover, button[type="button"]:hover {
 			background-color: #444; /* changed to match navbar hover color */
 		}
 
@@ -152,6 +152,8 @@
 				<input type="password" id="password" required placeholder="At least 8 characters" />
 			</div>
 			<button type="submit">Login</button>
+			<span style="margin: 0 10px;"></span> <!-- added space between buttons -->
+			<button type="button" onclick="location.href='signup.html'">Sign up</button>
 		</form>
 	</div>
 

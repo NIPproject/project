@@ -1,5 +1,4 @@
 <html>
-<html>
 <head>
 	<title>Registration Form</title>
 	<link rel="icon" type="image/x-icon" href=".\Images\wlogo.jpg">
@@ -7,15 +6,18 @@
 		body {
 			background-color: #f5f6f7;
 			font-family: 'Poppins', sans-serif;
+			margin: 0;
 		}
 
 		.container {
-			width: 50%;
-			margin: 40px auto;
-			padding: 20px;
 			background-color: #fff;
-			border: 1px solid #ddd;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			padding: 40px;
+			border-radius: 20px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			width: 300px; /* increased width */
+			margin: 100px auto; /* added margin top and bottom, and centered horizontally */
+			background-color: #f7f7f7;
+			border: none;
 		}
 
 		h1 {
@@ -45,29 +47,24 @@
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 		}
 
-		button[type="submit"] {
-			background-color: #4CAF50;
+		button[type="submit"], button[type="button"] {
+			background-color: #333; /* changed to match navbar color */
 			color: #fff;
-			padding: 10px 20px;
+			padding: 10px 40px; /* increased padding to make it wider */
 			border: none;
 			border-radius: 5px;
 			cursor: pointer;
 		}
 
-		button[type="submit"]:hover {
-			background-color: #3e8e41;
+		button[type="submit"]:hover, button[type="button"]:hover {
+			background-color: #444; /* changed to match navbar hover color */
 		}
 
 		.navbar {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
 			background-color: #333;
 			color: #fff;
 			padding: 10px;
 			text-align: center;
-			z-index: 1000;
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 		}
 
@@ -97,20 +94,31 @@
 		}
 
 		.footer {
-			position: fixed;
-			bottom: 0;
-			left: 0;
-			width: 100%;
 			background-color: #333;
 			color: #fff;
 			padding: 10px;
 			text-align: center;
-			z-index: 1000;
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 		}
 
 		.footer p {
 			margin: 0;
+		}
+
+		.person {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			padding: 10px;
+			margin: 0 auto 20px; /* centered horizontally and added margin bottom */
+		}
+
+		.person img {
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
 		}
 	</style>
 </head>
@@ -119,13 +127,16 @@
 		<ul>
 			<li><a href="#">Home</a></li>
 			<li><a href="login.html">Login</a></li>
-			<li><a href="ABout us.html">About</a></li>
+			<li><a href="About us.html">About</a></li>
 			<li><a href="Contact us.html">Contact</a></li>
 		</ul>
 	</div>
 
 	<div class="container">
-		<h1>sign up</h1>
+		<div class="person">
+			<img src="person.png" alt="person">
+		</div>
+		<h1>Sign up</h1>
 		<p>please fill out this form to create an account</p>
 		<form>
 			<div class="input-group">
@@ -137,7 +148,7 @@
 				<input type="email" id="email" required placeholder="tareq@example.com" />
 			</div>
 			<div class="input-group">
-				<label for="password">Password</label>
+				<label for="password">Password:</label>
 				<input type="password" id="password" required placeholder="At least 8 characters" />
 			</div>
 			<div class="input-group">
@@ -149,6 +160,8 @@
 				<input type="tel" id="telephone" required pattern="[0-9]{10}" placeholder="0791234567" />
 			</div>
 			<button type="submit">Submit</button>
+			<span style="margin: 0 10px;"></span> <!-- added space between buttons -->
+			<button type="button" onclick="location.href='login.html'">Login</button>
 		</form>
 	</div>
 
